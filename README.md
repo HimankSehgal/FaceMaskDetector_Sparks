@@ -1,7 +1,5 @@
 # FaceMaskDetector_Sparks
 
-# Image Classification using Pytorch and Convolutional Neural Networks
-
 ## Table of Contents: 
 * Overview of Project
 
@@ -16,15 +14,14 @@
 
 ## Overview of Project:
 
-We are given a dataset which contains images of Dogs and Cats . Our aim is to develop an algorithm  which will take an input image and based on parameters the algorithm has learned , it will predict whether the given input test image is a cat or dog
+We need to implement a face mask detector which detects whether a person is wearing a mask or not. This will be done for a video and an image
 
 ## Data Description:   
-For this project , I will be using the data from a Kaggle Competition named <a href='https://www.kaggle.com/c/dogs-vs-cats'>Dogs v. Cats</a>.<br>
-It has a varied collection of .jpg files which have been organized by me into separate train and test folders, and further divided the images into CAT and DOG subfolders.This helps to easily track files while writing the code .The data files have been cleaned and several files which give an error have been removed. 
+For this project , I will be using the data from a git hub repository by Prajna Bhandary  <a href='https://github.com/prajnasb/observations'>images_dataset</a>.<br>
 
 Total number of images in dataset : 24994<br>
-Number of images in train set : 18743<br>
-Number of images in test set : 6251
+Number of images in train set : 690<br>
+Number of images in test set : 686
 
 
 
