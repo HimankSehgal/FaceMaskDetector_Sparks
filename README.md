@@ -19,7 +19,7 @@ We need to implement a face mask detector which detects whether a person is wear
 ## Data Description:   
 For this project , I will be using the data from a git hub repository by Prajna Bhandary  <a href='https://github.com/prajnasb/observations'>images_dataset</a>.<br>
 
-Total number of images in dataset : 24994<br>
+Total number of images in dataset : 1376<br>
 Number of images in train set : 690<br>
 Number of images in test set : 686
 
