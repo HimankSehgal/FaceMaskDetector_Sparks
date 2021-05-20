@@ -8,7 +8,7 @@
 
 * Structure of the Approach
 
-* Conclusion
+* How to implement on your computer 
 
 
 
@@ -41,11 +41,10 @@ Number of images in test set : 686
 
 ## Structure of the Approach
 
-* ### 1. Defining Transformations for train and test data
-As different images have different sizes, it is important to define a tranform function which can take different images and return images which have similar aspect ratios and size. We will be using functions from <tt> torchvision.transforms </tt> like <tt>  transforms.Resize( )</tt> , <tt> transforms.CenterCrop() </tt> for this purpose. Also the pictures will be in form of pixels. We need to convert that to tensor values. For that we will use the function <tt> transforms.ToTensor() </tt><br>
-Apart from these transformations which will be applicable for both train and test data ,  we will also apply certain transformations for loading train data like <tt> transforms.RandomRotation() </tt> and <tt> transforms.RandomHorizontalFlip() </tt> because the size of our training set is very smaall i.e 18743 , so these transformations will help to augment the size of data set 
+* ### 1. mask_detector_training.ipynb
+Firstly , we load the data set by accessing directories using the os module. Then after loading the image , we convert to to array using <tt>img_to_array</tt>. We then perform one hot encoding then split it into train and test sets. Now since our train set is very small, we augment the size of train set by applying transformations like rotation, shifting etc. Then we perform transfer learning by loading a MobileNetV2 network and make changes ensuring the head FC layer sets are left off. We then train the model , save it and see the performace
  
-* ### 2. Load the train and test data into notebook and applying the described transformations and divide them into minibatches
+* ### 2. detecting_mask_in_image.ipynb
 
 Defining <tt> train_data </tt> and <tt> test_data </tt> and loading images from the path where they were saved in the computer along with applying the transformations described above. Also, since it is a common practice to divide the data into mini batches , so we will be doing the same using the <tt> torch.utils.data.DataLoader()</tt>
 
