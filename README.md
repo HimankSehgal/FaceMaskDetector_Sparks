@@ -50,31 +50,7 @@ We load our pre trained model, then we load the image in which we need to detect
 
 * ### 3. mask_in_video.ipynb
 
-The Model will be as follows 
-We are having 3 types of layers with following specifications
-1. Conv2d Layer : <tt> kernel_size = 4 x4 </tt>  , <tt> stride = 2</tt> ,<tt> padding = 0</tt> ( the output and input channels are mentioned below)
-2. MaxPool2d Layer :<tt> kernel_size = 2x2 </tt>  , <tt> stride = 2</tt>
-3. Full Connected layers : ( the output and input mentioned are mentioned below)
 
-The flow of Model will be:-
-
-Input ( 3 x 224 x 224) ---> (Conv2d Layer , MaxPool2d Layer) ---> 4 x 55 x 55 ---> (Conv2d Layer , MaxPool2d Layer) ---> 8 X 13 X 13 --->  ( Conv2d layer) ---> 16 x 5 x 5 ---> 
-400 x 1 ---> FC layer(in_features = 400 ,out_features = 120) ---> FC layer(in_features = 120 ,out_features = 84) ---> FC layer(in_features = 84 ,out_features = 2), softmax_layer ---> predictions
-
-
-I have kept number of channels and parameters like kernel_size , padding etc. in the powers of 2 as these help to speed up things because of structure of computer memory
-The paramaters for fully connected layers are kept to be 120,84 as many architectures like LeNet-5 have followed this pattern
-
-* ### 4. Instantiating the Model and defining the criteria for loss and optimizer 
-
-We are using the criteria as <tt> nn.CrossEntropyLoss() </tt> and optimizer as <tt> torch.optim.Adam() </tt> with learning rate as 0.01
-
-* ### 5. Performing Forward Propagation
-
-Performed 20 epochs and stored values of train_loss, test_loss, train_accuracy ,test_accuracy for every epoch for plotting graphs later on
-
-* ### 6. Evaluating performance
-Plotted graphs to see the pattern of different parameters that were stored in a list during forward propagation
 
 ## Conclusion
 
