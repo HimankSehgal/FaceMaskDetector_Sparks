@@ -28,16 +28,16 @@ Number of images in test set : 686
 
 ## Libraries used:
 * Numpy
-
-* Pandas
 * Matplotlib
 
-* torch
-* torchvision<br>
+* Tensorflow
+* Keras<br>
   
-* sklearn
+* OpenCV
 
 * os module of python
+* sklearn
+* imutils
 
 ## Structure of the Approach
 
