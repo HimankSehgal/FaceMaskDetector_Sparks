@@ -55,4 +55,7 @@ We define a function that extracts blobs from the face. Then we perform resizing
 
 ## How to implement on your computer
 
-Download the zip file of the repo.
+Download the zip file of the repo. Then if you want to implement mask detector in image, open the detecting_mask_in_image.ipynb file, change the paths in the 2nd cell according to the path where you have downloaded the files . The path should correspond to the prototxt and resnet model file. Then in the 4th cell, change the "withmask.jpg" to the image file on which you want to perform the operation. Then you are good to go, just run all the cells
+
+
+For video, just change the path in the 3rd cell corresponding the path where you store the prototext and resnet model file. After that just run the cells
