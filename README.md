@@ -46,9 +46,9 @@ Firstly , we load the data set by accessing directories using the os module. The
  
 * ### 2. detecting_mask_in_image.ipynb
 
-Defining <tt> train_data </tt> and <tt> test_data </tt> and loading images from the path where they were saved in the computer along with applying the transformations described above. Also, since it is a common practice to divide the data into mini batches , so we will be doing the same using the <tt> torch.utils.data.DataLoader()</tt>
+We load our pre trained model, then we load the image in which we need to detect, then we apply certain transformations to the input image and then load it into the model. On running the cells, we get an image with detection of wearing or not wearing the mask
 
-* ### 3. Defining the model class
+* ### 3. mask_in_video.ipynb
 
 The Model will be as follows 
 We are having 3 types of layers with following specifications
