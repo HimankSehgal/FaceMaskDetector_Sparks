@@ -49,9 +49,10 @@ Firstly , we load the data set by accessing directories using the os module. The
 We load our pre trained model, then we load the image in which we need to detect, then we apply certain transformations to the input image and then load it into the model. On running the cells, we get an image with detection of wearing or not wearing the mask
 
 * ### 3. mask_in_video.ipynb
+We define a function that extracts blobs from the face. Then we perform resizing to the frame store 3 values faces,locs ,preds. Then we load our model and using imutils have a video stream wherein our previously defined function extracts every frame and predicts where the face is and then tell whether a person is wearing a mask or not.
 
 
 
-## Conclusion
+## How to implement on your computer
 
-The training loss was 0.58 and test loss was 0.30 in the end
+Download the zip file of the repo.
